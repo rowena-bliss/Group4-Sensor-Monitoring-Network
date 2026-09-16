@@ -1,11 +1,10 @@
 # Group4-Sensor-Monitoring-Network
 Group 4 project – Sensor Monitoring Network implemented using Python OOP.
 
-class Sensor:
-    def __init__(self, sensor_id, location, unit, lower_limit, upper_limit):
-        self.sensor_id = sensor_id
-        self.location = location
-        self.unit = unit
-        self.lower_limit = lower_limit
-        self.upper_limit = upper_limit
-        self.current = None
+Scenario:
+An engineering laboratory monitors equipment using digital sensors.
+Each sensor has an identity, a location, a unit of measurement, a
+current reading, and lower/upper limits that define its acceptable
+range. Technicians update a sensor with new readings, and the system
+reports whether the reading is normal, too low, or too high, and
+whether that situation counts as an alarm.
