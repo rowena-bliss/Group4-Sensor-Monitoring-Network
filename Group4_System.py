@@ -4,11 +4,12 @@ Group Project - Topic 5: Scalable OOP System
 Group 4 - Sensor Monitoring Network
 
 Group members:
-- [Full Name 1]
-- [Full Name 2]
-- [Full Name 3]
-- [Full Name 4]
-(Replace the placeholders above with your actual group member names.)
+- ASIO DEMENTIA
+- FLORA KJ
+- NANKUNDA ROWENA
+- NAMMUGGA DANIELLA
+-EZEKIEL BARAKA
+-JJUMBA JULIUS 
 
 Scenario:
 An engineering laboratory monitors equipment using digital sensors.
@@ -49,7 +50,7 @@ class Sensor:
         if not isinstance(new_reading, (int, float)) or isinstance(new_reading, bool):
             print(
                 f"[REFUSED] Sensor {self.sensor_id}: reading must be a number, "
-                f"got {new_reading!r}."
+                f"got {new_reading!r}." #!r shows data type of entered invalid value
             )
             return False
 
@@ -94,7 +95,7 @@ class Sensor:
 
 
 def run_demo():
-    print("=== Sensor Monitoring Network Demo ===\n")
+    print("  SENSOR MONITORING NETWORK DEMO  \n")
 
     # Step 1: Create two sensors — a temperature sensor and a voltage sensor.
     temp_sensor = Sensor("TEMP-01", "Server Room A", "°C", lower_limit=18, upper_limit=27)
