@@ -4,12 +4,12 @@ Group Project - Topic 5: Scalable OOP System
 Group 4 - Sensor Monitoring Network
 
 Group members:
-- ASIO DEMENTIA
-- FLORA KJ
-- NANKUNDA ROWENA
-- NAMMUGGA DANIELLA
--EZEKIEL BARAKA
--JJUMBA JULIUS 
+- ASIO DEMENTIA - M25B38/039
+- FLORA KJ - S25B38/039
+- NANKUNDA ROWENA - 
+- NAMMUGGA DANIELLA - 
+-EZEKIEL BARAKA - M25B38/041
+-JJUMBA JULIUS - M25B38/016
 
 Scenario:
 An engineering laboratory monitors equipment using digital sensors.
