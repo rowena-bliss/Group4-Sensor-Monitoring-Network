@@ -4,11 +4,13 @@ Group Project - Topic 5: Scalable OOP System
 Group 4 - Sensor Monitoring Network
 
 Group members:
-- [Full Name 1]
-- [Full Name 2]
-- [Full Name 3]
-- [Full Name 4]
-(Replace the placeholders above with your actual group member names.)
+- Nankunda Rowena -S25B38/009
+- Namugga Daniella -M25B38/007
+- Jjumba Julius -M25B38/016
+- Asio Dementria -M25B38/039
+-Keji Flora  -S25B38/039
+- Ezekiel Baraka -M25B38/041 
+
 
 Scenario:
 An engineering laboratory monitors equipment using digital sensors.
@@ -40,7 +42,7 @@ class Sensor:
 
     def update_reading(self, new_reading):
         """
-        Update the sensor with a new reading.
+        
 
         Returns True if the reading was accepted, False if it was refused.
         An invalid reading (not a number) is refused rather than silently
