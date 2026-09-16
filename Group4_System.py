@@ -58,6 +58,16 @@ class Sensor:
         self.reading = new_reading
         return True
 
+    def reset_reading(self):
+        """
+        Clear the current sensor reading.
+
+        The sensor returns to the 'no reading' state until
+        a new reading is provided.
+        """
+        self.reading = None
+        print(f"[RESET] Sensor {self.sensor_id}: reading has been cleared.")
+        
     def get_status(self):
         """Return 'no reading', 'too low', 'too high', or 'normal'."""
         if self.reading is None:
@@ -121,6 +131,15 @@ def run_demo():
     temp_sensor.update_reading("hot")
     temp_sensor.display()  # reading stays at 31.0, unchanged
 
+    # Step 5: Reset the sensor reading.
+    print("\nStep 5: Reset sensor reading")
+    temp_sensor.reset_reading()
+    temp_sensor.display()
+
+    # Step 6: Take a new reading after the reset.
+    print("\nStep 6: New reading after reset")
+    temp_sensor.update_reading(24.0)
+    temp_sensor.display()
 
 if __name__ == "__main__":
     run_demo()
