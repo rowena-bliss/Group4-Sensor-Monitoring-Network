@@ -11,7 +11,6 @@ Group members:
 -Keji Flora  -S25B38/039
 - Ezekiel Baraka -M25B38/041 
 
-
 Scenario:
 An engineering laboratory monitors equipment using digital sensors.
 Each sensor has an identity, a location, a unit of measurement, a
@@ -43,7 +42,6 @@ class Sensor:
     def update_reading(self, new_reading):
         """
         
-
         Returns True if the reading was accepted, False if it was refused.
         An invalid reading (not a number) is refused rather than silently
         ignored or allowed to corrupt the sensor's state.
