@@ -51,7 +51,7 @@ class Sensor:
         if not isinstance(new_reading, (int, float)) or isinstance(new_reading, bool):
             print(
                 f"[REFUSED] Sensor {self.sensor_id}: reading must be a number, "
-                f"got {new_reading!r}."
+                f"got {new_reading!r}." #!r shows the data type of an entered element
             )
             return False
 
