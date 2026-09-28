@@ -112,17 +112,29 @@ def run_demo():
 
     # Step 2: Give each sensor a normal reading (inside its acceptable range).
     print("Step 2: Normal readings")
-    temp_sensor.update_reading(22.5)
-    volt_sensor.update_reading(225)
+    try:
+    temp_reading = float(input("Enter temperature reading (°C): "))
+    volt_reading = float(input("Enter voltage reading (V): "))
+
+    temp_sensor.update_reading(temp_reading)
+    volt_sensor.update_reading(volt_reading)
+    except ValueError:
+    print("Please enter numbers for both readings.")
     temp_sensor.display()
     volt_sensor.display()
 
     # Step 3: Give each sensor a reading outside its range -> alarm.
     print("\nStep 3: Out-of-range readings")
-    temp_sensor.update_reading(31.0)   # above 27 -> too high
-    volt_sensor.update_reading(195)    # below 210 -> too low
-    temp_sensor.display()
-    volt_sensor.display()
+    try:
+        temp_high_reading= float(input('try a out of range in C: '))  # above 27 -> too high
+        volt_low_reading= float(input('try a out of range in V: '))  # below 210 -> too low
+        temp_sensor.update_reading(temp_high_reading)
+        volt_sensor.update_reading(volt_low_reading)
+        temp_sensor.display()
+        volt_sensor.display()
+     except ValueError:
+        print("Please enter numbers for both readings.")
+
 
     # Step 4: Try an invalid update (text instead of a number) -> refused.
     print("\nStep 4: Invalid update is refused")
