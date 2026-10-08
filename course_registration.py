@@ -2,7 +2,7 @@
   Group 4. 
 Nankunda Rowena-S25B38/009
 Namugga Daniella-M25B38/007
-Keji Flora-S25B38/039
+Flora Keji-S25B38/039
 Jjumba Julius-M25B38/016
 Asio Dementria-M25B38/039
 Ezechiel Baraka-M25B38/041
