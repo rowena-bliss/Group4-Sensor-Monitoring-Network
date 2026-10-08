@@ -12,9 +12,7 @@ from abc import ABC, abstractmethod
 from datetime import date
 
 
-
 # 1. EXCEPTIONS - specific error types for clear messages
-
 
 class RegistrationError(Exception):
     """Base class for all business-rule violations in the system."""
@@ -85,7 +83,7 @@ class Registration:
     def drop_date(self):
         return self._drop_date
 
-    def drop(self):
+    def drop(self): #drops a course if a student is taking it
         if not self.is_active:
             raise RegistrationError("This registration has already been dropped.")
         self._status = Registration.DROPPED
