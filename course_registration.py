@@ -6,6 +6,21 @@ Keji Flora-S25B38/039
 Jjumba Julius-M25B38/016
 Asio Dementria-M25B38/039
 Ezechiel Baraka-M25B38/041
+
+GROUP 4: University Course Registration System
+Project Scenario
+Develop a system that manages students, academic courses and course registration. Different categories of
+courses have different requirements or fee calculations.
+Minimum Functional Requirements
+1. Register students.
+2. Add courses with unique course codes.
+3. Register a student for a course.
+4. Prevent duplicate registration for the same course.
+5. Drop a registered course.
+6. Display all courses taken by a particular student.
+7. Display students registered for a particular course.
+8. Search for courses and students.
+9. Calculate applicable course charges or workload according to course category.
 """
 import re
 from abc import ABC, abstractmethod
